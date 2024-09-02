@@ -3,11 +3,11 @@ import java.util.*;
 public class Apaxiaaans {
     public static String nameCompactor(String name) {
         String compactName = "";
-    	for (int i = 0; i < name.length(); i++) {
-    	    if (i == 0 || (i > 0 && name.charAt(i - 1) != name.charAt(i))) {
-    	        compactName += name.charAt(i);
-    	    }
-    	}
+        for (int i = 0; i < name.length(); i++) {
+            if (i == 0 || (i > 0 && name.charAt(i - 1) != name.charAt(i))) {
+                compactName += name.charAt(i);
+            }
+        }
 
         return compactName;
     }
