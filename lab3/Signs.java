@@ -38,7 +38,8 @@ public class Signs {
         Arrays.sort(stringArr,
                     Comparator.comparing(yappedWords -> yappedWords.middle));
         for (Word yappedWords : stringArr) {
-            System.out.println(yappedWords.word);
+            pw.println(yappedWords.word);
         }
+        pw.flush();
     }
 }
